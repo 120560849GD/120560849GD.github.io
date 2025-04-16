@@ -1,4 +1,102 @@
+:root {
+  --link-color: #1e6fa1; /* bleu océan */
+  --link-color-hover: #12486b; /* bleu foncé profond */
+  --header-footer-bg-color: #eef4f7; /* bleu très pâle */
+  --aside-accent-color: #b8c4bb; /* vert-gris léger, évoque le sel et les algues */
+  --skill-bar-fill-color: #ddeaf1; /* bleu clair, transparent comme l’eau */
+  --blockquote-bg-color: #f5fafa; /* fond très léger, comme un ciel voilé */
+  --blockquote-accent-color: #3a6e85; /* bord marin tempéré */
+  --blockquote-text-color: #3a4a58; /* gris foncé, élégant */
+  --spacing-inline: 0.5rem;
+}
 
+/* Fonts (optionnel) */
+body {
+  font-family: "Nunito", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #2f3e46; /* gris bleuté */
+  background-color: #fbfcfd; /* presque blanc, comme un ciel lumineux */
+}
+
+/* Titres avec un feeling maritime élégant */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  color: #1b3b4d; /* bleu profond pour les titres */
+  letter-spacing: 0.5px;
+}
+
+/* Liens */
+a {
+  color: var(--link-color) !important;
+}
+a:hover {
+  color: var(--link-color-hover);
+  text-decoration: underline dotted;
+}
+
+/* Header et Footer */
+.page-header,
+.page-footer {
+  background: var(--header-footer-bg-color);
+  border-color: #c5d5dd; /* bord doux comme une corde usée par l’eau */
+}
+
+/* Bordures */
+aside {
+  border-color: #c8d8e0;
+}
+
+/* Skillbars – aspect voile */
+.skill-bar {
+  background: #e8f1f5;
+  border-color: #a4b6c1;
+}
+.skill-bar-fill {
+  background: var(--skill-bar-fill-color) !important;
+  border-right-color: #7d99ac;
+}
+
+/* Blockquotes – comme une pensée sur un carnet de bord */
+blockquote {
+  background-color: var(--blockquote-bg-color);
+  border-left: 4px solid var(--blockquote-accent-color);
+  color: var(--blockquote-text-color);
+  box-shadow: 0 2px 4px rgba(58, 110, 133, 0.15);
+}
+
+/* Sections avec petites touches */
+.section-heading::before,
+.section-heading::after {
+  border-bottom: 1px solid #b3ccd6;
+}
+
+aside .section-heading {
+  border-left: 4px solid var(--aside-accent-color);
+}
+
+/* Images rondes = hublots ? */
+.header-image {
+  border-color: #a3bfc9;
+  box-shadow: 0 0 0 4px rgba(200, 230, 240, 0.4);
+}
+
+/* Petits détails */
+figcaption {
+  color: #7b8b91;
+}
+
+/* Impression */
+@media print {
+  body {
+    background: white;
+  }
+}
+
+
+
+
+/* 
 :root {
   --link-color: #0077cc;
   --link-color-hover: #00487c;
@@ -472,3 +570,4 @@ blockquote {
     print-color-adjust: exact !important;
   }
 }
+ */
